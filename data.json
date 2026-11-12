@@ -1,7 +1,7 @@
 {
   "source": "https://www.broadwaynowandnext.com/",
-  "last_updated": "2026-11-12T20:39:05Z",
-  "snapshot": "Initial snapshot transcribed from Broadway Now & Next on Nov 12, 2026. Refreshes after publishing are automatic when updater succeeds.",
+  "last_updated": "2026-11-12T21:05:20Z",
+  "snapshot": "Automatically refreshed from Broadway Now & Next.",
   "theatres": [
     {
       "name": "Al Hirschfeld",
@@ -486,6 +486,12 @@
           "previews": "2022-10-28",
           "opening": "2022-11-17",
           "closing": "2027-01-03"
+        },
+        {
+          "title": "The Odd Couple",
+          "previews": "2027-03-03",
+          "opening": "2027-03-23",
+          "closing": "2027-06-12"
         }
       ]
     },
