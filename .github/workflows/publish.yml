@@ -1,0 +1,81 @@
+name: Refresh and publish Broadway timeline
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '23 11 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: broadway-pages
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Check out files
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        if: github.event_name != 'push'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install parser dependencies
+        if: github.event_name != 'push'
+        run: python -m pip install -r requirements.txt
+
+      - name: Refresh source schedule
+        id: update
+        if: github.event_name != 'push'
+        continue-on-error: true
+        run: python update.py
+
+      - name: Commit validated data
+        if: steps.update.outcome == 'success'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Refresh Broadway schedule'
+            git push origin HEAD:main
+          fi
+
+      - name: Prepare static website
+        run: |
+          mkdir -p public
+          cp index.html data.json public/
+          touch public/.nojekyll
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload website
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: public
+
+      - name: Deploy website
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Flag unsuccessful refresh
+        if: steps.update.outcome == 'failure'
+        run: |
+          echo "::error::Could not refresh source; latest saved data remains live"
+          exit 1
