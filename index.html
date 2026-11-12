@@ -92,7 +92,7 @@
     .pop-close { float:right; border:0; background:#eef2f6; border-radius:6px; width:25px;height:25px; font-size:15px; color:#567; }
     .stale { display:none; margin:0 0 12px; padding:8px 12px; border-radius:8px; border:1px solid #f2dbad; background:#fffaf0; color:#8b6226; font-size:12px; }
     .stale.visible { display:block; }
-    @media(max-width:720px) { :root { --left:172px;--row:64px; } .mast{padding:18px 16px}.page{padding:14px 9px}.topline{align-items:center}.count-kpis{gap:10px}.kpi{font-size:18px}.kpi span{font-size:9px}.subtitle{font-size:12px}.searchbox input{width:100%; min-width:0}.searchbox{flex:1 1 200px}.tools-left{width:100%}.theatre-cell{padding-left:9px}.theatre-name{font-size:11px}.month-caption{min-width:110px}.scrollbox{height:69vh}.legend{gap:10px}.source-status{font-size:10px} }
+    @media(max-width:720px) { :root { --left:172px;--row:64px; } .mast{padding:18px 16px}.page{padding:14px 9px}.topline{align-items:center}.count-kpis{gap:10px;width:100%;justify-content:space-between;padding-top:8px}.topline{flex-wrap:wrap}.kpi{font-size:20px;text-align:left}.kpi span{font-size:9px}.subtitle{font-size:12px}.searchbox input{width:100%; min-width:0}.searchbox{flex:1 1 200px}.tools-left{width:100%}.theatre-cell{padding-left:9px}.theatre-name{font-size:11px}.month-caption{min-width:110px}.scrollbox{height:69vh}.legend{gap:10px}.source-status{font-size:10px} }
     @media print { .mast { background:white; color:black; }.toolbar,.popover{display:none!important}.scrollbox{height:auto;overflow:visible;}.board{box-shadow:none;} }
   </style>
 </head>
@@ -101,7 +101,7 @@
     <div class="eyebrow"><span class="brand-dot"></span> Broadway intelligence / 41 Broadway houses</div>
     <div class="topline">
       <div><h1>The Theatre Timeline<span style="color:#48ceb6">.</span></h1><p class="subtitle">Every Broadway stage. What's playing now, what opens next, and when the curtain falls.</p></div>
-      <div class="count-kpis"><div class="kpi" id="venue-count">41<span>Theatres</span></div><div class="kpi" id="show-count">56<span>Productions</span></div></div>
+      <div class="count-kpis"><div class="kpi" id="venue-count">41<span>Theatres</span></div><div class="kpi" id="playing-count" aria-label="Theatres currently playing, including previews">—<span>Playing Now</span></div><div class="kpi" id="show-count">57<span>Productions</span></div></div>
     </div>
   </div></header>
   <main class="page">
@@ -134,7 +134,12 @@
     const state = {data:seed, months:18, shift:0, filter:'all', search:'', selected:null};
     const fmt = (d)=>d ? new Date(d+'T12:00:00Z').toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric',timeZone:'UTC'}) : 'Not announced';
     const day = (d)=>new Date(d+'T00:00:00Z').getTime()/ONE_DAY;
-    const todayUTC = ()=> { const n=new Date(); return Date.UTC(n.getFullYear(),n.getMonth(),n.getDate())/ONE_DAY; };
+    // Use Broadway's local calendar date, even if the visitor is in another time zone.
+    const todayUTC = ()=> {
+      const parts = new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());
+      const part = (type)=>+parts.find(p=>p.type===type).value;
+      return Date.UTC(part('year'),part('month')-1,part('day'))/ONE_DAY;
+    };
     const isoMonth=(year,month)=>new Date(Date.UTC(year,month,1)).toISOString().slice(0,10);
     const escape = (str)=>String(str).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
     const clamp=(v,a,b)=>Math.min(b,Math.max(a,v));
@@ -158,11 +163,15 @@
       }
       return {groups,months};
     }
+    function isPlaying(show, now){
+      const start=show.previews||show.opening;
+      return !!start && day(start)<=now && (!show.closing||day(show.closing)>=now);
+    }
     function qualifies(show, name, now){
       const q=state.search.trim().toLowerCase();
       if(q && !(name+' '+show.title).toLowerCase().includes(q)) return false;
       const start=show.previews||show.opening, close=show.closing;
-      if(state.filter==='active') return !!start && day(start)<=now && (!close||day(close)>=now);
+      if(state.filter==='active') return isPlaying(show,now);
       if(state.filter==='future') return !!start && day(start)>now;
       return true;
     }
@@ -189,6 +198,7 @@
       const monthStart=new Date(start*ONE_DAY),monthEnd=new Date((end-1)*ONE_DAY);
       $('range-label').textContent=`${monthStart.toLocaleDateString('en-US',{month:'short',year:'2-digit',timeZone:'UTC'})} – ${monthEnd.toLocaleDateString('en-US',{month:'short',year:'2-digit',timeZone:'UTC'})}`;
       $('venue-count').innerHTML=`${state.data.theatres.length}<span>Theatres</span>`;
+      $('playing-count').innerHTML=`${state.data.theatres.filter(t=>t.shows.some(s=>isPlaying(s,now))).length}<span>Playing Now</span>`;
       $('show-count').innerHTML=`${state.data.theatres.reduce((n,t)=>n+t.shows.length,0)}<span>Productions</span>`;
       $('updated').textContent=state.data.last_updated ? new Date(state.data.last_updated).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}) : 'Unknown';
       const staleDays=state.data.last_updated ? Math.round((Date.now()-new Date(state.data.last_updated))/ONE_DAY) : 999;
