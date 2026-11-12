@@ -1,0 +1,589 @@
+{
+  "source": "https://www.broadwaynowandnext.com/",
+  "last_updated": "2026-11-12T20:39:05Z",
+  "snapshot": "Initial snapshot transcribed from Broadway Now & Next on Nov 12, 2026. Refreshes after publishing are automatic when updater succeeds.",
+  "theatres": [
+    {
+      "name": "Al Hirschfeld",
+      "address": "302 W 45th St",
+      "shows": [
+        {
+          "title": "Now You See Me Live",
+          "previews": null,
+          "opening": "2026-11-11",
+          "closing": "2027-01-03"
+        },
+        {
+          "title": "Paddington",
+          "previews": "2027-03-30",
+          "opening": "2027-04-18",
+          "closing": null
+        }
+      ]
+    },
+    {
+      "name": "Ambassador",
+      "address": "219 W 49th St",
+      "shows": [
+        {
+          "title": "Chicago",
+          "previews": "1996-10-23",
+          "opening": "1996-11-14",
+          "closing": null
+        }
+      ]
+    },
+    {
+      "name": "August Wilson",
+      "address": "245 W 52nd St",
+      "shows": [
+        {
+          "title": "Paranormal Activity",
+          "previews": "2026-08-14",
+          "opening": "2026-08-25",
+          "closing": "2027-02-28"
+        }
+      ]
+    },
+    {
+      "name": "Barrymore",
+      "address": "243 W 47th St",
+      "shows": [
+        {
+          "title": "Here There Are Blueberries",
+          "previews": "2026-11-02",
+          "opening": "2026-11-09",
+          "closing": "2027-01-10"
+        },
+        {
+          "title": "Small Mouth Sounds",
+          "previews": "2027-02-10",
+          "opening": "2027-03-11",
+          "closing": "2027-06-17"
+        }
+      ]
+    },
+    {
+      "name": "Belasco",
+      "address": "111 W 44th St",
+      "shows": [
+        {
+          "title": "Maybe Happy Ending",
+          "previews": "2024-10-16",
+          "opening": "2024-11-12",
+          "closing": null
+        }
+      ]
+    },
+    {
+      "name": "Booth",
+      "address": "222 W 45th St",
+      "shows": [
+        {
+          "title": "Downstate",
+          "previews": "2026-10-22",
+          "opening": "2026-11-15",
+          "closing": "2027-01-10"
+        },
+        {
+          "title": "Lost Lear",
+          "previews": "2027-03-29",
+          "opening": "2027-04-23",
+          "closing": "2027-07-18"
+        }
+      ]
+    },
+    {
+      "name": "Broadhurst",
+      "address": "235 W 44th St",
+      "shows": [
+        {
+          "title": "It's A Wonderful Life",
+          "previews": "2026-11-04",
+          "opening": "2026-11-18",
+          "closing": "2027-01-03"
+        },
+        {
+          "title": "The Amish Project",
+          "previews": "2027-02-10",
+          "opening": "2027-03-10",
+          "closing": "2027-05-02"
+        }
+      ]
+    },
+    {
+      "name": "Broadway",
+      "address": "1681 Broadway",
+      "shows": [
+        {
+          "title": "The Great Gatsby",
+          "previews": "2024-03-29",
+          "opening": "2024-04-25",
+          "closing": null
+        }
+      ]
+    },
+    {
+      "name": "Circle in the Square",
+      "address": "1633 Broadway",
+      "shows": [
+        {
+          "title": "Just in Time",
+          "previews": "2025-03-31",
+          "opening": "2025-04-26",
+          "closing": null
+        }
+      ]
+    },
+    {
+      "name": "Eugene O'Neill",
+      "address": "230 W 49th St",
+      "shows": [
+        {
+          "title": "The Book of Mormon",
+          "previews": "2011-02-24",
+          "opening": "2011-03-24",
+          "closing": null
+        }
+      ]
+    },
+    {
+      "name": "Friedman",
+      "address": "261 W 47th St",
+      "shows": [
+        {
+          "title": "School Girls; Or, The African Mean Girls Play",
+          "previews": "2026-09-08",
+          "opening": "2026-09-28",
+          "closing": "2026-11-15"
+        },
+        {
+          "title": "Awake and Sing!",
+          "previews": "2026-12-15",
+          "opening": "2027-01-07",
+          "closing": "2027-02-07"
+        },
+        {
+          "title": "Montauk",
+          "previews": "2027-03-30",
+          "opening": "2027-04-19",
+          "closing": null
+        }
+      ]
+    },
+    {
+      "name": "Gershwin",
+      "address": "222 W 51st St",
+      "shows": [
+        {
+          "title": "Wicked",
+          "previews": "2003-10-08",
+          "opening": "2003-10-30",
+          "closing": null
+        }
+      ]
+    },
+    {
+      "name": "Golden",
+      "address": "252 W 45th St",
+      "shows": [
+        {
+          "title": "Operation Mincemeat",
+          "previews": "2025-02-15",
+          "opening": "2025-03-20",
+          "closing": "2027-07-04"
+        }
+      ]
+    },
+    {
+      "name": "Hayes",
+      "address": "240 W 44th St",
+      "shows": [
+        {
+          "title": "The Fantasticks",
+          "previews": "2026-10-22",
+          "opening": "2026-11-16",
+          "closing": "2027-02-07"
+        },
+        {
+          "title": "Gloria",
+          "previews": "2027-03-17",
+          "opening": "2027-04-05",
+          "closing": null
+        }
+      ]
+    },
+    {
+      "name": "Hudson",
+      "address": "141 W 44th St",
+      "shows": [
+        {
+          "title": "Other Desert Cities",
+          "previews": "2026-09-29",
+          "opening": "2026-10-18",
+          "closing": "2027-01-17"
+        }
+      ]
+    },
+    {
+      "name": "Imperial",
+      "address": "249 W 45th St",
+      "shows": [
+        {
+          "title": "860",
+          "previews": "2026-10-01",
+          "opening": "2026-10-21",
+          "closing": "2027-02-14"
+        }
+      ]
+    },
+    {
+      "name": "Jacobs",
+      "address": "242 W 45th St",
+      "shows": [
+        {
+          "title": "The Outsiders",
+          "previews": "2024-03-16",
+          "opening": "2024-04-11",
+          "closing": null
+        }
+      ]
+    },
+    {
+      "name": "James Earl Jones",
+      "address": "138 W 48th St",
+      "shows": [
+        {
+          "title": "Wanted",
+          "previews": "2026-10-15",
+          "opening": "2026-11-08",
+          "closing": null
+        }
+      ]
+    },
+    {
+      "name": "Lena Horne",
+      "address": "256 W 47th St",
+      "shows": [
+        {
+          "title": "Six",
+          "previews": "2021-09-17",
+          "opening": "2021-10-03",
+          "closing": "2027-01-03"
+        },
+        {
+          "title": "Dirty Dancing",
+          "previews": "2027-02-12",
+          "opening": "2027-03-14",
+          "closing": "2027-09-05"
+        }
+      ]
+    },
+    {
+      "name": "Longacre",
+      "address": "220 W 48th St",
+      "shows": [
+        {
+          "title": "Two Strangers (Carry a Cake Across New York)",
+          "previews": "2025-11-01",
+          "opening": "2025-11-20",
+          "closing": "2026-11-29"
+        },
+        {
+          "title": "Three Days of Rain",
+          "previews": "2027-01-30",
+          "opening": "2027-03-01",
+          "closing": "2027-05-23"
+        }
+      ]
+    },
+    {
+      "name": "Lunt-Fontanne",
+      "address": "205 W 46th St",
+      "shows": [
+        {
+          "title": "Blue Man Group: A New Holiday Surprise",
+          "previews": "2026-11-12",
+          "opening": "2026-11-17",
+          "closing": "2027-01-03"
+        },
+        {
+          "title": "Warriors",
+          "previews": "2027-03-09",
+          "opening": "2027-04-08",
+          "closing": null
+        }
+      ]
+    },
+    {
+      "name": "Lyceum",
+      "address": "149 W 45th St",
+      "shows": [
+        {
+          "title": "Oh, Mary!",
+          "previews": "2024-06-26",
+          "opening": "2024-07-11",
+          "closing": "2027-07-10"
+        }
+      ]
+    },
+    {
+      "name": "Lyric",
+      "address": "214 W 43rd St",
+      "shows": [
+        {
+          "title": "Harry Potter and the Cursed Child",
+          "previews": "2018-03-16",
+          "opening": "2018-04-22",
+          "closing": null
+        }
+      ]
+    },
+    {
+      "name": "Majestic",
+      "address": "245 W 44th St",
+      "shows": [
+        {
+          "title": "Purple Rain",
+          "previews": "2027-03-12",
+          "opening": "2027-04-12",
+          "closing": null
+        }
+      ]
+    },
+    {
+      "name": "Marquis",
+      "address": "210 W 46th St",
+      "shows": [
+        {
+          "title": "Stranger Things",
+          "previews": "2025-03-28",
+          "opening": "2025-04-22",
+          "closing": "2027-01-03"
+        },
+        {
+          "title": "Damn Yankees",
+          "previews": "2027-03-24",
+          "opening": "2027-04-20",
+          "closing": null
+        }
+      ]
+    },
+    {
+      "name": "Minskoff",
+      "address": "200 W 45th St",
+      "shows": [
+        {
+          "title": "The Lion King",
+          "previews": "1997-10-15",
+          "opening": "1997-11-13",
+          "closing": null
+        }
+      ]
+    },
+    {
+      "name": "Music Box",
+      "address": "239 W 45th St",
+      "shows": [
+        {
+          "title": "Inter Alia",
+          "previews": "2026-11-11",
+          "opening": "2026-12-01",
+          "closing": "2027-02-21"
+        }
+      ]
+    },
+    {
+      "name": "Nederlander",
+      "address": "208 W 41st St",
+      "shows": [
+        {
+          "title": "Schmigadoon!",
+          "previews": "2026-04-04",
+          "opening": "2026-04-20",
+          "closing": "2027-04-04"
+        }
+      ]
+    },
+    {
+      "name": "Neil Simon",
+      "address": "250 W 52nd St",
+      "shows": [
+        {
+          "title": "MJ",
+          "previews": "2021-12-06",
+          "opening": "2022-02-01",
+          "closing": null
+        }
+      ]
+    },
+    {
+      "name": "New Amsterdam",
+      "address": "214 W 42nd St",
+      "shows": [
+        {
+          "title": "Aladdin",
+          "previews": "2014-02-26",
+          "opening": "2014-03-20",
+          "closing": null
+        }
+      ]
+    },
+    {
+      "name": "Palace",
+      "address": "160 W 47th St",
+      "shows": [
+        {
+          "title": "The Lost Boys",
+          "previews": "2026-03-27",
+          "opening": "2026-04-26",
+          "closing": null
+        }
+      ]
+    },
+    {
+      "name": "Richard Rodgers",
+      "address": "226 W 46th St",
+      "shows": [
+        {
+          "title": "Hamilton",
+          "previews": "2015-07-13",
+          "opening": "2015-08-06",
+          "closing": null
+        }
+      ]
+    },
+    {
+      "name": "Schoenfeld",
+      "address": "236 W 45th St",
+      "shows": [
+        {
+          "title": "Buena Vista Social Club",
+          "previews": "2025-02-21",
+          "opening": "2025-03-19",
+          "closing": "2027-01-17"
+        }
+      ]
+    },
+    {
+      "name": "Shubert",
+      "address": "225 W 44th St",
+      "shows": [
+        {
+          "title": "Galileo",
+          "previews": "2026-11-10",
+          "opening": "2026-12-06",
+          "closing": null
+        }
+      ]
+    },
+    {
+      "name": "Stephen Sondheim",
+      "address": "124 W 43rd St",
+      "shows": [
+        {
+          "title": "& Juliet",
+          "previews": "2022-10-28",
+          "opening": "2022-11-17",
+          "closing": "2027-01-03"
+        }
+      ]
+    },
+    {
+      "name": "St. James",
+      "address": "246 W 44th St",
+      "shows": [
+        {
+          "title": "Dolly",
+          "previews": "2026-12-07",
+          "opening": "2027-01-19",
+          "closing": null
+        }
+      ]
+    },
+    {
+      "name": "Studio 54",
+      "address": "254 W 54th St",
+      "shows": [
+        {
+          "title": "The Rocky Horror Show",
+          "previews": "2026-03-26",
+          "opening": "2026-04-23",
+          "closing": "2027-05-30"
+        }
+      ]
+    },
+    {
+      "name": "Todd Haimes",
+      "address": "227 W 42nd St",
+      "shows": [
+        {
+          "title": "The Imaginary Invalid",
+          "previews": "2026-09-25",
+          "opening": "2026-10-22",
+          "closing": "2026-11-22"
+        },
+        {
+          "title": "Mix and Master",
+          "previews": "2027-01-05",
+          "opening": "2027-01-27",
+          "closing": "2027-02-28"
+        },
+        {
+          "title": "Rhinoceros",
+          "previews": "2027-04-07",
+          "opening": "2027-04-25",
+          "closing": "2027-06-13"
+        }
+      ]
+    },
+    {
+      "name": "Vivian Beaumont",
+      "address": "150 W 65th St",
+      "shows": [
+        {
+          "title": "A Few Good Men",
+          "previews": "2026-10-08",
+          "opening": "2026-10-29",
+          "closing": "2027-01-10"
+        },
+        {
+          "title": "The Sound of Music",
+          "previews": "2027-03-23",
+          "opening": "2027-04-15",
+          "closing": "2027-07-18"
+        }
+      ]
+    },
+    {
+      "name": "Walter Kerr",
+      "address": "219 W 48th St",
+      "shows": [
+        {
+          "title": "Hadestown",
+          "previews": "2019-03-22",
+          "opening": "2019-04-17",
+          "closing": null
+        }
+      ]
+    },
+    {
+      "name": "Winter Garden",
+      "address": "1634 Broadway",
+      "shows": [
+        {
+          "title": "Much Ado About Nothing",
+          "previews": "2026-10-31",
+          "opening": "2026-11-19",
+          "closing": "2027-01-10"
+        },
+        {
+          "title": "Evita",
+          "previews": "2027-02-27",
+          "opening": "2027-03-25",
+          "closing": null
+        }
+      ]
+    }
+  ]
+}
