@@ -5,3 +5,7 @@ Interactive 41-theatre Gantt chart powered by Broadway Now & Next. Open `index.h
 ## Enable hosting
 
 In the repository select **Settings → Pages → Source: GitHub Actions**. Then open **Actions → Refresh and publish Broadway timeline → Run workflow**. Your site URL is https://mrkenny83.github.io/broadway-theatre-timeline/.
+
+## Publishing
+
+The GitHub Actions Pages deployment runs after changes to `main` and on the daily scheduled refresh. If needed, select **Actions → Refresh and publish Broadway timeline → Run workflow** to publish manually. Hosting is provided by GitHub Pages.
