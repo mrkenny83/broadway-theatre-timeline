@@ -1,6 +1,6 @@
 {
   "source": "https://www.broadwaynowandnext.com/",
-  "last_updated": "2026-11-15T17:51:21Z",
+  "last_updated": "2026-11-16T21:06:37Z",
   "snapshot": "Automatically refreshed from Broadway Now & Next.",
   "theatres": [
     {
@@ -42,6 +42,12 @@
           "previews": "2026-08-14",
           "opening": "2026-08-25",
           "closing": "2027-02-28"
+        },
+        {
+          "title": "All My Sons",
+          "previews": "2027-03-30",
+          "opening": "2027-04-13",
+          "closing": "2027-06-27"
         }
       ]
     },
@@ -83,7 +89,7 @@
           "title": "Downstate",
           "previews": "2026-10-22",
           "opening": "2026-11-15",
-          "closing": "2027-01-10"
+          "closing": "2027-02-14"
         },
         {
           "title": "Lost Lear",
@@ -151,12 +157,6 @@
       "name": "Friedman",
       "address": "261 W 47th St",
       "shows": [
-        {
-          "title": "School Girls; Or, The African Mean Girls Play",
-          "previews": "2026-09-08",
-          "opening": "2026-09-28",
-          "closing": "2026-11-15"
-        },
         {
           "title": "Awake and Sing!",
           "previews": "2026-12-15",
