@@ -1,6 +1,6 @@
 {
   "source": "https://www.broadwaynowandnext.com/",
-  "last_updated": "2026-11-17T19:55:35Z",
+  "last_updated": "2026-11-18T19:27:08Z",
   "snapshot": "Automatically refreshed from Broadway Now & Next.",
   "theatres": [
     {
@@ -209,7 +209,7 @@
           "title": "Gloria",
           "previews": "2027-03-17",
           "opening": "2027-04-05",
-          "closing": null
+          "closing": "2027-06-13"
         }
       ]
     },
