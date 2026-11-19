@@ -1,6 +1,6 @@
 {
   "source": "https://www.broadwaynowandnext.com/",
-  "last_updated": "2026-11-18T19:27:08Z",
+  "last_updated": "2026-11-19T19:31:07Z",
   "snapshot": "Automatically refreshed from Broadway Now & Next.",
   "theatres": [
     {
@@ -106,7 +106,7 @@
         {
           "title": "It's A Wonderful Life",
           "previews": "2026-11-04",
-          "opening": "2026-11-18",
+          "opening": "2026-11-23",
           "closing": "2027-01-03"
         },
         {
@@ -222,6 +222,12 @@
           "previews": "2026-09-29",
           "opening": "2026-10-18",
           "closing": "2027-01-17"
+        },
+        {
+          "title": "Birthright",
+          "previews": "2027-02-23",
+          "opening": "2027-03-15",
+          "closing": "2027-07-11"
         }
       ]
     },
