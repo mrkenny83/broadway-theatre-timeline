@@ -1,6 +1,6 @@
 {
   "source": "https://www.broadwaynowandnext.com/",
-  "last_updated": "2026-11-22T18:34:47Z",
+  "last_updated": "2026-11-23T22:44:59Z",
   "snapshot": "Automatically refreshed from Broadway Now & Next.",
   "theatres": [
     {
@@ -529,12 +529,6 @@
       "name": "Todd Haimes",
       "address": "227 W 42nd St",
       "shows": [
-        {
-          "title": "The Imaginary Invalid",
-          "previews": "2026-09-25",
-          "opening": "2026-10-22",
-          "closing": "2026-11-22"
-        },
         {
           "title": "Mix and Master",
           "previews": "2027-01-05",
