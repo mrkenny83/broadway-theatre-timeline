@@ -1,6 +1,6 @@
 {
   "source": "https://www.broadwaynowandnext.com/",
-  "last_updated": "2026-11-23T22:44:59Z",
+  "last_updated": "2026-11-24T21:22:42Z",
   "snapshot": "Automatically refreshed from Broadway Now & Next.",
   "theatres": [
     {
@@ -396,6 +396,12 @@
           "previews": "2026-11-11",
           "opening": "2026-12-01",
           "closing": "2027-02-21"
+        },
+        {
+          "title": "The Comedy About Spies",
+          "previews": "2027-03-27",
+          "opening": "2027-04-14",
+          "closing": "2027-07-25"
         }
       ]
     },
